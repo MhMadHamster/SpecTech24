@@ -8,7 +8,9 @@
 
 .separator {
 	height: 20px;
-	background-color: #666;
+	background-image: linear-gradient(-45deg, #fb1, #fb1 35%, #000 35%, #000 65%, #fb1 65%);
+	-webkit-background-size: 35px 20px;
+	background-size: 35px 20px;
 }
 
 .row {
@@ -27,6 +29,7 @@
 .row > div:first-child { padding-left: 0; }
 .row > div:last-child { padding-right: 0; }
 
+.column { height: 50px; }
 .column3 { width: 25%; }
 .column4 { width: 33.33%; }
 .column6 { width: 50%; }
@@ -103,6 +106,7 @@ nav ul li a:hover {
 	font-size: 18px;
 	color: #202E3B;
 	font-weight: bold;
+	margin: 8.5px 0;
 }
 
 .btn {
@@ -128,7 +132,7 @@ nav ul li a:hover {
 }
 
 .subheader h2 { 
-	margin: 0;
+	margin: 6px 0;
 	line-height: 38px;
 }
 
@@ -185,7 +189,6 @@ nav ul li a:hover {
 .promo-slogan a {
 	color: #202E3B;
 	font-size: 15px;
-	/*margin-top: 25px;*/
 	display: inline-block;
 	padding: 10px;
 	padding-right: 35px;
@@ -270,6 +273,7 @@ section ul.faces li {
 .main .persons {
 	margin: 15px 0;
 	padding-left: 10px;
+	background-color: #f3f3f3;
 }
 
 .persons h2 {
@@ -291,6 +295,10 @@ section ul.faces li {
 
 .main .persons span {
 	font-weight: normal;
+}
+
+.main .persons .faces {
+	background-color: #fff;
 }
 
 .persons ul li img {
@@ -327,6 +335,7 @@ section ul.faces li {
 
 .strides {
 	padding-left: 10px;
+	background-color: #F3F3F3;
 }
 
 .strides h2 {
@@ -537,6 +546,7 @@ iframe {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid #000;
+	width: 630px;
 }
 
 .description {
