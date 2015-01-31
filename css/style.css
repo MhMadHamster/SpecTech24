@@ -1,5 +1,7 @@
 /* Layout */
-
+* {
+	outline: none;
+}
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -92,6 +94,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+	/*background-color: #FFE184;*/
+}
+
+.call_btn {
+	text-decoration: none;
+	color: #000;
+	padding: 15px 20px;
+	font-size: 17px;
+	display: inline-block;
+	float: right;
 	background-color: #FFE184;
 }
 /* / Header */
@@ -625,4 +637,23 @@ footer nav ul li a:hover {
 	background-color: #202E3B;
 }
 
-/* / Footer 
+/* / Footer */
+
+/* Tablet Devices */
+@media screen and (max-width: 790px) and (min-width: 481px) {
+	.container {
+		width: 720px;
+	}
+
+	nav {
+		display: block;
+		margin: 20px 0;
+	}
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+	.container {
+		width: 480px;
+	}
+}
