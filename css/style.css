@@ -41,6 +41,16 @@
 .to-right { float: right; }
 .to-left { float: left; }
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
 /* Typography */
 
 h1 {}
@@ -74,6 +84,10 @@ a.logo img {
 }
 
 /* Navigation */
+.hdr-nav nav {
+	display: none;
+}
+
 nav {
 	float: right;
 }
@@ -640,15 +654,40 @@ footer nav ul li a:hover {
 /* / Footer */
 
 /* Tablet Devices */
-@media screen and (max-width: 790px) and (min-width: 481px) {
+@media screen and (max-width: 900px) and (min-width: 481px) {
 	.container {
 		width: 720px;
 	}
 
-	nav {
-		display: block;
-		margin: 20px 0;
+	/* Header */
+	header nav {
+		display: none;
 	}
+
+	.hdr-nav nav {
+		text-align: center;
+		font-weight: bold;
+		background-color: #FFE184;
+		float: none;
+		display: block;
+		padding: 1px;
+	}
+
+	.call_btn {
+		padding: 10px 20px;
+	}
+
+	nav ul li a {
+		color: #2c3f51;
+	}
+
+	.separator-header {
+		display: none;
+	}
+
+
+	/* Promo */
+	
 }
 
 /* Mobile Devices */
