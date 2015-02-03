@@ -654,7 +654,7 @@ footer nav ul li a:hover {
 /* / Footer */
 
 /* Tablet Devices */
-@media screen and (max-width: 900px) and (min-width: 481px) {
+@media screen and (max-width:900px) and (min-width:481px) {
 	.container {
 		width: 720px;
 	}
@@ -687,7 +687,7 @@ footer nav ul li a:hover {
 
 
 	/* Promo */
-	
+
 }
 
 /* Mobile Devices */
